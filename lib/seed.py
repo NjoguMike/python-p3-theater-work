@@ -25,7 +25,7 @@ if __name__ == '__main__':
         session.commit()
         roles.append(role)
     
-    session.query(Audition).delete()
+    # session.query(Audition).delete()
     auditions = []
     for role in roles:
         audition = Audition(
